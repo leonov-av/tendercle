@@ -12,7 +12,7 @@ def check_host_card_exists(host):
 
 def create_new_host_card(host):
     f = open("data/hosts/" + host, "w")
-    f.write(json.dumps({'created':int(time.time())}, indent=4, sort_keys=True))
+    f.write(json.dumps({'host':host,'created':int(time.time())}, indent=4, sort_keys=True))
     f.close()
 
 
