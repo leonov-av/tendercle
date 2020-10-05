@@ -1,0 +1,4 @@
+.idea/*
+__pycache__/*
+input.txt
+data/hosts/[0-9\.]*

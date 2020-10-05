@@ -1,0 +1,3 @@
+import functions_tasks
+
+functions_tasks.task_processing_cycle()
