@@ -36,7 +36,7 @@ Examples:
 
 ```
 python3.6 tendercle.py --add-targets "input.txt" --targets-source "Nmap"
-python3.6 tendercle.py --get-host-card "91.194.226.137"
+python3.6 tendercle.py --get-host-card "81.177.6.213"
 python3.6 tendercle.py --get-host-card-ids
 ```
 
