@@ -7,11 +7,12 @@ def get_targets_from_input_file(filename):
     f.close()
     targets = list()
     for line in target_file_content.split("\n"):
-        target = dict()
-        target['host'] = line.split("\t")[0].lower()
-        target['type'] = line.split("\t")[1].lower()
-        target['port'] = line.split("\t")[2].lower()
-        targets.append(target)
+        if "\t" in line:
+            target = dict()
+            target['host'] = line.split("\t")[0].lower()
+            target['type'] = line.split("\t")[1].lower()
+            target['port'] = line.split("\t")[2].lower()
+            targets.append(target)
     return targets
 
 
