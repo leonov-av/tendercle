@@ -11,6 +11,8 @@ E.g.:
 
 ### How to Run ### 
 
+#### From sources ####
+
 * tendercle.py - for cli (import targets, get statistics, etc.)
 
 ```
@@ -30,6 +32,13 @@ optional arguments:
   --get-host-card HOST_CARD
                         get status of the HOST_CARD (IP address)
   --get-host-card-ids   get all available HOST_CARD ids (IP addresses)
+```
+
+#### From Docker #### 
+
+```
+docker build -t tendercle .
+docker run -it --rm tendercle -h
 ```
 
 Examples:
